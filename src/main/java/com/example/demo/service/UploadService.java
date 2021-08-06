@@ -13,7 +13,7 @@ import java.nio.file.Paths;
 public class UploadService {
 
     public ResponseEntity<Object> uploadFile(MultipartFile multipartFile) throws IOException {
-        Path path = Paths.get("~/uploaded/", multipartFile.getOriginalFilename());
+        Path path = Paths.get("/home/uploaded/", multipartFile.getOriginalFilename());
         multipartFile.transferTo(path);
         return ResponseEntity.ok("SUCCESS");
     }
