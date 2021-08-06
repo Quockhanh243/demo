@@ -1,0 +1,10 @@
+
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://192.168.140.128:5432/dev_booking
+    username: postgres
+    password: Admin@123
+  redis:
+    host: 192.168.140.128
+    port: 6379
